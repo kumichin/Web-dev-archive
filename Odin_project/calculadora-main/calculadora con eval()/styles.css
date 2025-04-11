@@ -1,0 +1,135 @@
+
+/* Variables */
+:root{
+    --marinero: #402E7A;
+    --azul: #4C3BCF;
+    --celeste: #4B70F5;
+    --clarito: #3DC2EC;
+}
+
+/* Valores generales */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ajuste de altura para que el degradado del fondo se ajuste a la pantalla correctamente */
+
+html, body{
+    height: 100%;
+}
+
+/* Degradado de fondo, tonos azules */
+
+body{
+    background-image: linear-gradient(to bottom right, 
+    var(--clarito) 0%,
+    var(--clarito) 25%,
+    var(--celeste) 50%,
+    var(--clarito) 75%,
+    var(--clarito) 100%
+    );
+
+}
+
+/* titulos */
+
+h1 {
+    text-align: center;
+    margin-top: 1.875rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 0.625rem;
+    color: rgb(5, 5, 65);
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  /* cuerpo calculadora */
+
+.calculadora{
+    width: 30rem;
+    background-color: rgba(200, 202, 247, 0.277);
+    margin: 4rem auto;
+    padding: 1.25rem;
+    border-radius: 0.313rem;
+    box-shadow: 0 0.125rem  0.313rem rgb(0, 0, 0);
+    text-align: center;
+    
+} 
+
+#pantalla {
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: right;
+  }
+
+  input[type="button"] {
+    width: 70px;
+    height: 40px;
+    /* margin-right: 5px;*/
+    margin-bottom: 5px; 
+    font-size: 16px;
+    /* background-color: var(--celeste); */
+    border: .1rem solid var(--azul);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: .3rem;
+    margin-right: .3rem;
+    
+  }
+
+  input[type="button"]:hover {
+    background-color: #ddd;
+  }
+
+  input[type="button"]:last-child {
+    margin-right: 0;
+  }
+  
+
+  .ancho{
+    padding: 0 3.4rem;
+    
+  }
+
+  .mas-ancho{
+    padding: 0 7.3rem;
+  }
+
+  input:active{
+    box-shadow: 0 3px #666;
+    transform: translateY(2px);
+  }
+
+  .numeros{
+    background-color: var(--celeste);
+    color: azure;
+    font-weight: 800;
+  }
+
+  .operaciones{
+    background-color: var(--marinero);
+    color: azure;
+    font-weight: 800;
+  }
+
+  .borrar{
+    background-color: var(--clarito);
+    color: azure;
+    font-weight: 800;
+  }
+
+  .otro{
+    background-color: var(--azul);
+    color: azure;
+    font-weight: 800;
+  }

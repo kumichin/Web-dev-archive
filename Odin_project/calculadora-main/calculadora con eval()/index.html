@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Calculadora by Kumi</title>
+</head>
+<body>
+    <h1>Calculadora versión preliminal</h1>
+    <h2>By Kumi Aisaka</h2>
+    <div class="calculadora">
+        <input class= "pantalla" type="text" id="pantalla" readonly>
+        
+        <br>
+        
+        <input  class="mas-ancho borrar" type="button" value="C" onclick="borrar()">
+        <!-- <input class="operaciones" type="button" value="%" onclick="añadir('%')"> -->
+        <input class="operaciones" type="button" value="/" onclick="añadir('/')">
+    
+        <br>
+        
+        <input class="numeros" type="button" value="1" onclick="añadir('1')">
+        <input class="numeros" type="button" value="2" onclick="añadir('2')">
+        <input class="numeros" type="button" value="3" onclick="añadir('3')">
+        <input class="operaciones" type="button" value="x" onclick="añadir('*')">
+        
+        <br>
+        
+        <input class="numeros" type="button" value="4" onclick="añadir('4')">
+        <input class="numeros" type="button" value="5" onclick="añadir('5')">
+        <input class="numeros" type="button" value="6" onclick="añadir('6')">
+        <input class="operaciones" type="button" value="-" onclick="añadir('-')">
+        
+        <br>
+        
+        <input  class="numeros" type="button" value="7" onclick="añadir('7')">
+        <input class="numeros" type="button" value="8" onclick="añadir('8')">
+        <input class="numeros" type="button" value="9" onclick="añadir('9')">
+        <input class="operaciones" type="button" value="+" onclick="añadir('+')">
+        
+        <br>
+        
+        <input class="ancho numeros" type="button" value="0" onclick="añadir('0')">
+        <input class="otro" type="button" value="." onclick="añadir('.')">
+        <input  class="ancho otro"type="button" value="=" onclick="calcular()">
+        
+        
+    </div>
+<script src="script.js"></script>
+
+</body>
+</html>
