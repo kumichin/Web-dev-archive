@@ -1,0 +1,426 @@
+
+/* ajustes generales */
+
+:root{
+    --fondo-gris: #e2e8f0;
+    --fondo-azul: #0284c7;
+    --bandita-lateral: #fbbf24;
+    --sombra: #9ca3af;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+
+/* container principal */
+
+.container{
+    display: grid;
+    grid-template: auto auto auto auto / auto auto auto auto;
+    height: 100%;
+} 
+
+/* barra lateral */
+
+/* el logo y la palabra dashboard */
+
+.view-dashboard{
+    width: 2.8rem;
+    height: 2.8rem;
+    vertical-align: middle;
+    filter: invert(100%);
+    margin-right: .6rem;
+    
+}
+
+h2{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    font-size: 1.6rem;
+}
+
+/* resto de elementos de la barra lateral */
+
+.iconos-barra-lateral{
+    width: 1.4rem;
+    height: 1.4rem;
+    vertical-align: middle; 
+    filter: invert(100%);
+    margin: .7rem;
+    font-weight: 700;
+}
+
+.grupo1-sidebard{
+    margin-bottom: 2.8rem;
+}
+
+/* las letras del sidebar */
+
+.opciones{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+
+/* elementos del header */
+
+.header{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem 0 3rem;
+    -webkit-box-shadow: 1px -13px 32px 12px rgba(173,173,173,1);
+-moz-box-shadow: 1px -13px 32px 12px rgba(173,173,173,1);
+box-shadow: 1px -13px 32px 12px rgba(173,173,173,1);
+margin-bottom: .5rem;
+}
+
+/* zona del buscador */
+
+.buscador{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: .5rem;
+    padding-top: 1rem;
+}
+
+
+input{
+    background-color: var(--fondo-gris);
+    border-radius: 20px;
+    border: none;
+    padding-right: 30rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: .5rem;
+   
+}
+
+
+.lupita{
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: middle;
+    margin-bottom: .3rem;
+}
+
+.campana{
+    width: 1.5rem;
+    height: 1.5rem;
+    vertical-align: middle;
+    margin-bottom: .3rem;
+}
+
+
+.user-1{
+    width: 3rem;
+    height: 3rem;
+    vertical-align: middle;
+    margin-left: .8rem;
+    margin-right: .8rem;
+
+}
+
+.nombre_usuario-1{
+    font-weight: 700;
+}
+
+/* parte de abajo del header (usuario, nombre y botones) */
+
+.usuario{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
+
+.izquierda-1{
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.nick{
+    margin-top: 2.1rem;
+    margin-left: .5rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nombre_usuario-2{
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.user-2{
+    width: 6rem;
+    height: 6rem;
+    vertical-align: middle;
+}
+
+button{
+    background-color: var(--fondo-azul);
+    color: white;
+    border: none;
+    padding: .6rem 1.5rem;
+    border-radius: 30px;
+    margin: 2rem 1rem 0 0;
+}
+
+/* Elementos del main */
+
+.svg-proyectos{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+/* distribucion principal de las grid-areas */
+
+.header{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: grid;
+}
+
+.sidebard{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: var(--fondo-azul);
+    color: white;
+    padding-left: 1.5rem;
+    padding-right: 5rem;
+    display: flex;
+    flex-direction: column;
+
+   
+
+}
+
+.main{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: var(--fondo-gris);
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 7rem;
+    position: relative;
+}
+
+/* la frase que está entre los espacion del grid de main */
+
+.your-projects{
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 1.5rem; 
+    margin-left: 1.6rem;
+}
+
+.announ{
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: -4.5rem; 
+    margin-left: -2.3rem;
+}
+
+.trend{
+    position: absolute;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: -4.5rem; 
+    margin-left: -2.3rem;
+}
+
+
+
+/* distribucion grid de las partes del main */
+
+/* comienzo del grid de las tarjetas de la linea amarilla */
+
+#supercool{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;
+    padding: 1.6rem 1.2rem 1.6rem 1.6rem;
+    border-left: .5rem solid var(--bandita-lateral);
+     -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    border-radius: .5rem;
+    margin-right: -1rem;
+    
+ 
+}
+
+#less-cool{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;
+    padding: 1.5rem;
+    border-left: .5rem solid var(--bandita-lateral);
+     -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    border-radius: .5rem;
+    margin-right: -1rem;
+}
+
+#imposible-app{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: white;
+    padding: 1.5rem;
+    border-left: .5rem solid var(--bandita-lateral);
+     -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    border-radius: .5rem;
+    margin-right: -1rem;
+}
+
+#pan-comido-app{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: white;
+    padding: 1.5rem;
+    border-left: .5rem solid var(--bandita-lateral);
+     -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    border-radius: .5rem;
+    margin-right: -1rem;
+}
+
+#Ad-Blocker{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: white;
+    padding: 1.5rem;
+    border-left: .5rem solid var(--bandita-lateral);
+     -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    border-radius: .5rem;
+    margin-right: -1rem;
+}
+
+#Money-maker{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background-color: white;
+    padding: 1.5rem;
+    border-left: .5rem solid var(--bandita-lateral);
+    
+    -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    border-radius: .5rem;
+    margin-right: -1rem;
+}
+
+
+
+
+
+#izquierda-main{
+    display: grid;
+    grid-template: auto auto auto / auto auto;
+    gap: 3rem;
+    margin: 3.5rem 1.6rem 1.6rem 1.6rem;
+    
+}
+
+.iconos-proyectos{
+    display: flex;
+    justify-content: end;
+    margin: 2rem .1rem .2rem 6rem;
+    
+}
+
+
+/* fin del grid de las tarjetas de la linea amarilla */
+
+
+/* distribución grid de la parte de noticias y usuarios */
+
+.derecha-main{
+    display: grid;
+    grid-template: auto auto/ auto ;
+    gap: 3rem;
+}
+
+.noticias{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    background-color: white;
+    margin: 3.5rem 4rem 2rem 3rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+}
+
+.trending{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    background-color: white;
+    margin: 0rem 4rem 1.8rem 3rem;
+    padding: 2.5rem;
+    border-radius: .5rem;
+    -webkit-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    -moz-box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+    box-shadow: 5px 4px 9px 2px rgba(173,173,173,1);
+   
+}
+
+.site, .comunidad, .privacidad{
+    padding: 1rem;
+}
+
+
+.frase{
+    font-size: 1rem;
+    color: grey;
+    margin-left: 4.5rem;
+    position: absolute;
+    margin-top: -1rem;
+}
+
+
+/* fin del codigo css */

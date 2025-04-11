@@ -1,0 +1,352 @@
+<!-- Practica de css grid combinado con flex-box -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/iconos/monitor-svgrepo-com.svg"
+      type="image/x-icon" />
+    <title>Admin Dashboard by Kumi</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" id="header">
+        <div class="buscador" id="buscador">
+          <div class="izquierda">
+            <label for="buscador"
+              ><img class="lupita" src="assets/iconos/lupa.svg" alt="lupita"
+            /></label>
+            <input type="text" name="busqueda" id="buscador" />
+          </div>
+          <div class="derecha">
+            <img
+              class="campana "
+              src="assets/iconos/campana.svg"
+              alt="campanita" />
+            <img
+              class="user-1"
+              src="assets/iconos/user-cat.svg"
+              alt="imagen de usuario" />
+            <span class="nombre_usuario-1">Kumi Aisaka</span>
+          </div>
+        </div>
+        <div class="usuario" id="usuario">
+          <div class="izquierda-1">
+          <img
+            class="user-2"
+            src="assets/iconos/user-cat.svg"
+            alt="imagen de usuario" style="display: inline;"/>
+          <section>
+          <span class="hi" style="font-weight: 700;">Hi, there,</span>
+          <span class="nombre_usuario-2">Kumi Aisaka</span> </section>
+          <span class="nick">@kumi</span>
+       
+        </div>
+        <div class="derecha-1">
+          <button type="button">New</button>
+          <button type="button">Upload</button>
+          <button type="button">Share</button>
+        </div>
+        </div>
+      </div>
+
+<!-- Parte de las tarjetas de proyectos -->
+
+      <div class="main">
+        <p class="your-projects">Your Projects</p>
+        <div id="izquierda-main">
+          
+          <div class="project" id="supercool">
+            
+            <h4>Projecto Super Cool</h4>
+            <p>
+              Este es el proyecto más cool que jamás verás en tu vida. Preparate
+              antes de verlo porque no estarás preparado y puede dañarte su
+              poder cool
+            </p>
+            <div class="iconos-proyectos">
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/star-plus-outline.svg"
+                alt="favorito" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/eye-plus-outline.svg"
+                alt="visualizaciones" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/vector-polyline.svg"
+                alt="compartidos" />
+              </div>
+          </div>
+          <div class="project" id="less-cool">
+            <h4>Projecto menos Cool</h4>
+            <p>
+              Este es el proyecto algo menos cool que el otro pero sigue
+              conservando algo de cool. No te descuides o te afectará su poder
+              cool atenuado.
+            </p>
+            <div class="iconos-proyectos">
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/star-plus-outline.svg"
+                alt="favorito" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/eye-plus-outline.svg"
+                alt="visualizaciones" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/vector-polyline.svg"
+                alt="compartidos" />
+              </div>
+          </div>
+          <div class="project" id="imposible-app">
+            <h4>Imposible App</h4>
+            <p>
+              Esta es una app imposible. la App más imposible que puedas
+              encontrar. Desafiará tus limites y te cambiará usala bajo tu
+              propia responsabilidad.
+            </p>
+            <div class="iconos-proyectos">
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/star-plus-outline.svg"
+                alt="favorito" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/eye-plus-outline.svg"
+                alt="visualizaciones" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/vector-polyline.svg"
+                alt="compartidos" />
+              </div>
+          </div>
+          <div class="project" id="pan-comido-app">
+            <h4>App más fácil</h4>
+            <p>
+              Un proyecto muy fácil de hacer muy sencillo. Tan fácil y sencillo que 
+              ni te darás cuenta que estas ejecutando un programa.
+              -¿Que estoy ejecutando un programa?, venga ya. 
+            </p>
+            <div class="iconos-proyectos">
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/star-plus-outline.svg"
+                alt="favorito" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/eye-plus-outline.svg"
+                alt="visualizaciones" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/vector-polyline.svg"
+                alt="compartidos" />
+              </div>
+          </div>
+          <div class="project" id="Ad-Blocker">
+            <h4>Ad Blocker</h4>
+            <p>
+              App para bloquear los anuncios molestos e insistentes. Lo bueno de
+              esta aplicacion es que puedes hasta elegir que anuncios ver o
+              fastidiar a amigos y no tan amigos con anuncios insistente
+            </p>
+            <div class="iconos-proyectos">
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/star-plus-outline.svg"
+                alt="favorito" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/eye-plus-outline.svg"
+                alt="visualizaciones" />
+              <img
+                class="svg-proyectos"
+                src="assets/iconos/vector-polyline.svg"
+                alt="compartidos" />
+              </div>
+          </div>
+          <div class="project" id="Money-maker">
+            <h4>Money Maker</h4>
+            <p>
+              ¿Quieres dinero?, usa esta app. Es la mejor app para conseguir
+              dinero, pruebala y ve pensando donde guardaras los miles y miles
+              billetes que que te volarán del cielo
+            </p>
+            <div class="iconos-proyectos">
+            <img
+              class="svg-proyectos"
+              src="assets/iconos/star-plus-outline.svg"
+              alt="favorito" />
+            <img
+              class="svg-proyectos"
+              src="assets/iconos/eye-plus-outline.svg"
+              alt="visualizaciones" />
+            <img
+              class="svg-proyectos"
+              src="assets/iconos/vector-polyline.svg"
+              alt="compartidos" />
+            </div>
+          </div>
+        </div>
+        <div class="derecha-main">
+          <div class="noticias">
+            <p class="announ">Announcements</p>
+            <div class="site">
+            <h4>Site Maintenance</h4>
+            <p>
+              Mañana la página estará inhabilitada unas horas en la madrugada
+              (hora española), para proceder a realizar un mantenimiento del
+              sistema
+            </p>
+           
+          </div>
+           <hr>
+          <div class="comunidad">
+            <h4>Día de la comunidad</h4>
+            <p>
+              Muy pronto celebraremos el día de la comunidad, se publicará un
+              ranking donde colocaremos a los usuarios más participativos de
+              nuestra comunidad. Así que comparte tus proyectos, comenta en los
+              de los demás, entra en grupos colaborativos, se parte de la
+              solución
+            </p>
+            
+          </div>
+          <hr>
+          <div class="privacidad">
+            <h4>Actualizada la politica de privacidad</h4>
+            <p>
+              Hemos actualizado nuestra politica de seguridad, entra en este
+              post para firmar que estas de acuerdo y te has enterado de las
+              nuevas actualizaciones. Si no firmas no se te aplicaran pero
+              tampoco disfrutarás de la totalidad de las ventajas de nuestra
+              página.
+            </p>
+          </div>
+        </div>
+          <div class="trending">
+            <p class="trend">Trending</p>
+            <p class="espaciado-user">
+              <img
+                class="user-1  espaciado-user"
+                src="assets/iconos/hello-kitty-svgrepo-com.svg"
+                alt="logo usuario tegan" />@tegan
+              <p class="frase">World Peace builder</p>
+            </p>
+            <p class="espaciado-user">
+              <img
+                class="user-1 "
+                src="assets/iconos/user-cat.svg"
+                alt="logo usuario tegan" />@kumi
+              <p class="frase">Super Cool Project</p>
+            </p>
+            <p class="espaciado-user">
+              <img
+                class="user-1"
+                src="assets/iconos/keroppi-svgrepo-com.svg"
+                alt="logo usuario tegan" />@kendall
+              <p class="frase">Life Changing App</p>
+            </p>
+            <p class="espaciado-user">
+              <img
+                class="user-1"
+                src="assets/iconos/zebra-svgrepo-com.svg"
+                alt="logo usuario tegan" />@alex <p class="frase">No Traffic Maker</p>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="sidebard" id="sidebard">
+        <h2>
+          <img
+            class="view-dashboard"
+            src="assets/iconos/view-dashboard.svg"
+            alt="Esto es una imagen de un cuadrito" />Dashboard
+        </h2>
+
+        <div class="grupo1-sidebard">
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/home-account.svg"
+                alt="Home" /></a
+            ><span class="opciones">Home</span>
+          </p>
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/monitor-account.svg"
+                alt="Profile" /></a
+            ><span class="opciones">Profile</span>
+          </p>
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/message-settings-outline.svg"
+                alt="Messages" /></a
+            ><span class="opciones">Messages</span>
+          </p>
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/clock-time-three-outline.svg"
+                alt="History" /></a
+            ><span class="opciones">History</span>
+          </p>
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/note-multiple-outline.svg"
+                alt="Tasks" /></a
+            ><span class="opciones">Tasks</span>
+          </p>
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/communities.svg"
+                alt="Communities" /></a
+            ><span class="opciones">Communities</span>
+          </p>
+        </div>
+        <div class="grupo2-sidebard">
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/cog-outline.svg"
+                alt="Settings" /></a
+            ><span class="opciones">Settings</span>
+          </p>
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/help-box.svg"
+                alt="Support" /></a
+            ><span class="opciones">Support</span>
+          </p>
+          <p>
+            <a href="#"
+              ><img
+                class="iconos-barra-lateral"
+                src="assets/iconos/privacy.svg"
+                alt="Privacy" /></a
+            ><span class="opciones">Privacy</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
