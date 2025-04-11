@@ -11,7 +11,7 @@ Estos proyectos representan una etapa fundamental en mi proceso de aprendizaje. 
 
 ## 🧩 Estructura del repositorio
 
-### 📂 `freecodecamp-projects/`
+### 📂 [`freecodecamp-projects/`](https://github.com/kumichin/Web-dev-archive/tree/0e5ab049dec4b301f836224fbb2be953518415e3/Proyectos_FreeCodeCamp)
 
 Proyectos realizados en FreeCodeCamp antes de que la plataforma ofreciera el certificado de Full Stack. Algunos ejemplos:
 
