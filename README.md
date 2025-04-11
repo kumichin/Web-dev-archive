@@ -18,7 +18,7 @@ Proyectos realizados en FreeCodeCamp antes de que la plataforma ofreciera el cer
 - Webs creadas solo con HTML y CSS
 - Mini proyectos con JavaScript (cambiador de color, libro de calificaciones, juego sencillo de matar dragones)
 
-### 📂 `odin-project/`
+### 📂 [`odin-project/`](https://github.com/kumichin/Web-dev-archive/tree/d2be813dbbc80155d4d95d84dcaa5ed6125d8b6c/Odin_project)
 
 Proyectos prácticos del curriculum de The Odin Project:
 
