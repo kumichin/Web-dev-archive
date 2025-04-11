@@ -1,0 +1,83 @@
+
+:root{
+    /* tema de colores */
+    --borde-tablero: #af74da;
+    --color-titulos: rgb(227, 211, 234);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+}
+
+body{
+    background-image: url(assets/images/6464298.jpg);
+    color: var(--color-titulos);
+}
+
+
+h1{
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 1.8rem;
+}
+
+.texto{
+    visibility: hidden;
+    color: rgb(195, 222, 223);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem;
+}
+
+.trofeo{
+    vertical-align: middle;
+    width: 4.5rem;
+    height: 4.5rem;
+}
+
+#tablero{
+    width: 600px;
+
+    max-width: 100%; /* esto es para que al reducirse la ventana, el tablero no pierda la forma*/
+    display:flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border: .8rem double var(--borde-tablero);
+    box-shadow: 1px 5px 16px 16px rgba(0,0,0,0.8);
+-webkit-box-shadow: 1px 5px 16px 16px rgba(0,0,0,0.8);
+-moz-box-shadow: 1px 5px 16px 16px rgba(0,0,0,0.8);
+
+}
+
+#tablero>button{
+    width: 220px;
+    height: 220px;
+    max-width: 33.33%;
+    font-size: 10em;
+}
+
+
+.footer{
+    background-color: rgba(187, 108, 12, 0.53);
+    -webkit-box-shadow: inset 0px 24px 25px 12px rgba(0,0,0,0.5);
+-moz-box-shadow: inset 0px 24px 25px 12px rgba(0,0,0,0.5);
+box-shadow: inset 0px 24px 25px 12px rgba(0,0,0,0.5);
+
+}
+
+
+footer{
+    margin: 3rem;
+    padding: 3rem 3rem 2rem 3rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+}

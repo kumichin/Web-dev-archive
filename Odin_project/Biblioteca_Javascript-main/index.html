@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="assets/iconos/library-book-svgrepo-com.svg" type="image/x-icon">
+    <title>La biblioteca de Kumi</title>
+</head>
+<body>
+    <div class="titulo-app">
+        <h1>La biblioteca de Kumi</h1>
+    </div>
+    <div class="fondo-app">
+        <div class="btn-mascara">
+        <div class="button-container">
+            <span class="mas" >Adopta un libro</span> 
+          <button type="button" name="Hover" id="mostrar-dialogo">Adopta un libro</button>
+        </div>
+    </div>
+<div class="contenedor-libros">
+    <section id="seccionLibros">
+        
+    </section>
+</div>
+
+    <div class="estilo-dialog">
+        <dialog class="dialog" id="alert-dialog">
+            <form action="">
+                <label for="titulo">Titulo</label>
+                <input type="text" id="titulo" name="title" placeholder="Divergente">
+                <br>
+                <label for="author">Autor</label>
+                <input class="input" id="author" name="author" placeholder="Veronica Roth">
+                <br>
+                <label for="pages">Nº de páginas</label>
+                <input type="number" id="pages" name="pages" placeholder="464">
+                <br>
+                <label for="sinopsis">Sinopsis del libro</label>
+                <textarea name="sinopsis" id="sinopsis" placeholder="Resumen del libro" ></textarea>
+                <br>
+               <div class="read_status">
+                    <label for="read">Read</label>
+                <input type="checkbox" name="read" id="read" class="check_read" >
+                </div> 
+                <button type="reset" class="borrar">Borrar todo</button>
+            </form>
+            <button type="button" class="guardar" onclick="this.parentElement.close()" id="guardar">Guardar</button>
+            <button type="button" class="cerrar" onclick="this.parentElement.close()">Cerrar</button> 
+                
+                <!--La función que tiene onclick es this (se refiere a button), parentElement (se refiere  dialog) y la función cerrar para que se cierre-->
+        </dialog> 
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="prueba.js"></script>
+</body>
+</html>

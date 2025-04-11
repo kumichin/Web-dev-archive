@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>etch-a-sketch by Kumi</title>
+</head>
+<body>
+    <div class="eas-container">
+        <div class="main-grid">
+            <h1 class="titulo">Etch-a-Sketch</h1>
+            <div id="grid" class="grid">
+                <!-- Script will set default grid size and adjust as necessary -->
+            </div>
+        </div>
+        <div class="grid-options">
+            
+            <div class="color-choice">
+                <input type="color" id="color-selection" name="color-selection" value="#000000">
+            </div>
+            <div class="caja">
+                <div class="arcoiris">
+                    <button id="arcoiris" class="pintar-arcoiris" >Multicolor</button>
+                </div>
+                <div class="escala-grises">
+                    <button id="sombreado" class="sombreado" >Sombreado</button>
+                </div>
+            </div>
+            <div class="caja">
+                
+                <div class="eraser-container">
+                    <button id="eraser" class="eraser-toggle" >Borrador</button>
+                </div>
+                <div class="clear-container">
+                    <button id="clear" class="clear-grid">Limpiar</button>
+                </div>
+            </div>
+                <div class="grid-size-slider">
+                    <label class="grid-size-label"></label>
+                    <input type="range" id="grid-slider" name="grid-slider" min="1" max="100" value="16">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
