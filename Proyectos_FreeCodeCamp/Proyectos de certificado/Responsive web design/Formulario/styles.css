@@ -1,0 +1,149 @@
+body {
+  font-family: monospace, fantasy, sans serif;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #CCC5F7;
+  margin: 0;
+   font-weight: 400;
+  background-image: url("https://gogohanguk.com/wp-content/uploads/2020/01/Kpop-groups.png");
+}
+
+h1 {
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: monospace, fantasy;
+  font-size: 1.2;
+  line-height: inherit;
+}
+
+.submit-button {
+  color: #E9B4D0 !important;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background: rgba(0,0,0,0);
+  border: 8px double;
+  border-color: #F766B2;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 40px;
+  text-decoration-line: overline underline;
+  cursor: pointer;
+}
+
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+  background-color: rgba(33, 7, 82, 0.87);
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.625rem;
+  margin-bottom: 1.875rem;
+}
+
+.description {
+  font-style: monospace, Verdana, sans-serif;
+  font-weight: 150;
+
+}
+
+.clue {
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  color: #E3DAF4;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* form */
+
+form {
+
+  padding: 2.5rem 0.625rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+}

@@ -1,0 +1,84 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* new-amsterdam-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'New Amsterdam';
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/NewAmsterdam-Regular.ttf) format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+body{
+    background-color: rgb(231, 206, 206);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.image{
+    position: relative;
+}
+
+img{
+    position: absolute;
+    width:24rem;
+    height: 44rem;
+    margin-right: 0;
+    margin-left: 26rem;
+    margin-top: 0;
+    margin-bottom: 40rem;
+
+}
+
+h1{
+    position: relative;
+    margin: 8rem;
+    font-size: 3rem;
+    color: rgb(79, 10, 10);
+    font-family: 'New Amsterdam';
+}
+
+p{
+    margin: 2rem;
+    font-family: 'New Amsterdam';
+    font-size: 1.5rem;
+}
+
+
+/* cuadro de resultado */
+input{
+    padding: 1rem;
+    width: 18rem;
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    border: brown solid .3rem;
+}
+
+#results-div{
+    font-size: 2rem;
+    color: rgb(90, 5, 5);
+}
+
+
+/* botones */
+
+button{
+    padding: .8rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    width: 8rem;
+
+}
+
+button:active{
+    border-bottom: rgb(45, 44, 44) solid .4rem ;
+}

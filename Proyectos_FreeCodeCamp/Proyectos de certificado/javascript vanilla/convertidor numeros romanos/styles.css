@@ -1,0 +1,78 @@
+
+/* estética general de la app */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(assets/imagenes/fondo\ romano.jpg);
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 1rem;
+    display: flex;
+}
+
+/* cuadro donde estan los datos de la app web */
+
+.transparencia{
+    background-image: linear-gradient(
+        black 0%,
+        rgba(0, 0, 0, 0.758) 25%,
+        rgba(0, 0, 0, 0.438) 50%,
+        rgba(0, 0, 0, 0.749) 75%,
+        black 100%
+    );
+    margin: 2.5rem auto;
+    padding: 4rem;
+    border-radius: 6rem;
+}
+
+/* encabezados */
+
+h1{
+    font-size: 3.6rem;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+span, p{
+text-align: center;
+font-size: 1.5rem;
+padding: .6rem;
+}
+
+.programa{
+    display: flex;
+    flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+label{
+    /* /* display: flex; */
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 1.5rem;
+}
+
+input{
+padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.result{
+    height: 2rem;
+    width: auto;
+    margin-bottom: 2rem;
+    padding: 2.5rem 1rem 3rem 1rem;
+}
+
+button{
+    padding: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem 1rem 1rem 1rem;
+    border-radius: 0 2rem 0 2rem;
+    color: rgb(5, 5, 67);
+}

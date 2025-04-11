@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">    
+  <head>
+    <meta charset="UTF-8">
+    <title>Página de documentación técnica</title>
+    <link href="styles.css" rel="stylesheet" />   
+  </head>
+
+  <body>
+    
+	<div class="container">
+		<div class="grid1">
+			<nav id="navbar">
+		        <header>PHP Documentation</header>
+		        <ul>
+		            <li><a class="nav-link" href="#What_is_PHP?">What is PHP?</a></li>
+		            <li><a class="nav-link" href="#What_can_PHP_do?">What can PHP do?</a></li>
+		            <li><a class="nav-link" href="#What_you_should_already_know?">What you should already know?</a></li>
+		            <li><a class="nav-link" href="#What_do_I_need?">What do I need?</a></li>
+		            <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+		            <li><a class="nav-link" href="#Variables">Variables</a></li>
+		            <li><a class="nav-link" href="#Declaring_variables">Declaring variables</a></li>
+		            <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+		            <li><a class="nav-link" href="#Global_scope">Global scope</a></li>
+		            <li><a class="nav-link" href="#Local_scope">Local scope</a></li>
+		            <li><a class="nav-link" href="#Static_scope">Static scope</a></li>
+		            <li><a class="nav-link" href="#Constants">Constants</a></li>
+		            <li><a class="nav-link" href="#Data_types">Data types</a></li>
+		            <li><a class="nav-link" href="#If..._else_statement">If... else statement</a></li>
+		            <li><a class="nav-link" href="#While_statement">While statement</a></li>
+		            <li><a class="nav-link" href="#Reference">Reference</a></li>
+		        </ul>
+		    </nav>
+		</div>
+
+		<div class="grid2 grid3">
+			    <main id="main-doc">
+        
+			        <section class="main-section" id="What_is_PHP?">
+			            <header>What is PHP?</header>
+			            <p>PHP (recursive acronym for PHP: Hypertext Preprocessor) is a widely-used open source general-purpose scripting language that is especially suited for web development and can be embedded into HTML.</p>
+			           
+			            <p>Nice, but what does that mean? An example:</p>
+			            <code>
+			                <p>&lt;!DOCTYPE html&gt;</p>
+			                <p>&lt;html&gt;</p>
+			                <p>&lt;head&gt;</p>
+			                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Example&lt;/title&gt;</p>
+			                <p>&lt;/head&gt;</p>
+			                <p>&lt;body&gt;</p>
+			                <p>&nbsp;&nbsp;&nbsp;&nbsp;&lt;?php</p>
+			                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;echo "Hi, I'm a PHP script!"</p>
+			                <p>&nbsp;&nbsp;&nbsp;&nbsp;?&gt;</p>
+			                <p>&lt;/body&gt;</p>
+			                <p>&lt;/html&gt;</p>
+			            </code>
+
+			            <p>Instead of lots of commands to output HTML (as seen in C or Perl), PHP pages contain HTML with embedded code that does "something" (in this case, output "Hi, I'm a PHP script!"). The PHP code is enclosed in special start and end processing instructions &lt;?php and ?&gt; that allow you to jump into and out of "PHP mode."</p>
+
+			            <p>What distinguishes PHP from something like client-side JavaScript is that the code is executed on the server, generating HTML which is then sent to the client. The client would receive the results of running that script, but would not know what the underlying code was. You can even configure your web server to process all your HTML files with PHP, and then there's really no way that users can tell what you have up your sleeve.</p>
+
+			            <p>The best things in using PHP are that it is extremely simple for a newcomer, but offers many advanced features for a professional programmer. Don't be afraid reading the long list of PHP's features. You can jump in, in a short time, and start writing simple scripts in a few hours.</p>
+
+			            <p>Although PHP's development is focused on server-side scripting, you can do much more with it. Read on, and see more in the <a href="#whatcanphpdo">What can PHP do?</a> section, or go right to the <a href="https://www.php.net/manual/en/tutorial.php">introductory tutorial</a> if you are only interested in web programming.</p>
+			        </section>
+
+
+			        <section class="main-section" id="What_can_PHP_do?">
+			            <header>What can PHP do?</header>
+			            <p>Anything. PHP is mainly focused on server-side scripting, so you can do anything any other CGI program can do, such as collect form data, generate dynamic page content, or send and receive cookies. But PHP can do much more.</p>
+
+			            <p>There are three main areas where PHP scripts are used.</p>
+
+			            <ul>
+			                <li>Server-side scripting. This is the most traditional and main target field for PHP. You need three things to make this work: the PHP parser (CGI or server module), a web server and a web browser. You need to run the web server, with a connected PHP installation. You can access the PHP program output with a web browser, viewing the PHP page through the server. All these can run on your home machine if you are just experimenting with PHP programming. See the <a href="https://www.php.net/manual/en/install.php">installation instructions</a> section for more information.</li>
+			                <li>Command line scripting. You can make a PHP script to run it without any server or browser. You only need the PHP parser to use it this way. This type of usage is ideal for scripts regularly executed using cron (on *nix or Linux) or Task Scheduler (on Windows). These scripts can also be used for simple text processing tasks. See the section about <a href="https://www.php.net/manual/en/features.commandline.php">Command line usage of PHP</a> for more information.</li>
+
+			                <li>Writing desktop applications. PHP is probably not the very best language to create a desktop application with a graphical user interface, but if you know PHP very well, and would like to use some advanced PHP features in your client-side applications you can also use PHP-GTK to write such programs. You also have the ability to write cross-platform applications this way. PHP-GTK is an extension to PHP, not available in the main distribution. If you are interested in PHP-GTK, visit <a href="http://gtk.php.net/">» its own website</a>.</li>
+			            </ul>
+
+			            <p>PHP can be <a href="https://www.php.net/manual/en/install.php">used</a> on all major operating systems, including Linux, many Unix variants (including HP-UX, Solaris and OpenBSD), Microsoft Windows, macOS, RISC OS, and probably others. PHP also has support for most of the web servers today. This includes Apache, IIS, and many others. And this includes any web server that can utilize the FastCGI PHP binary, like lighttpd and nginx. PHP works as either a module, or as a CGI processor.</p>
+
+			            <p>So with PHP, you have the freedom of choosing an operating system and a web server. Furthermore, you also have the choice of using procedural programming or object oriented programming (OOP), or a mixture of them both.</p>
+
+			            <p>With PHP you are not limited to output HTML. PHP's abilities includes outputting images, PDF files and even Flash movies (using libswf and Ming) generated on the fly. You can also output easily any text, such as XHTML and any other XML file. PHP can autogenerate these files, and save them in the file system, instead of printing it out, forming a server-side cache for your dynamic content.</p>
+
+			            <p>One of the strongest and most significant features in PHP is its support for a <a href="https://www.php.net/manual/en/refs.database.php">wide range of databases</a>. Writing a database-enabled web page is incredibly simple using one of the database specific extensions (e.g., for <a href="https://www.php.net/manual/en/book.mysqli.php">mysql</a>), or using an abstraction layer like <a href="https://www.php.net/manual/en/book.pdo.php">PDO</a>, or connect to any database supporting the Open Database Connection standard via the <a href="https://www.php.net/manual/en/book.uodbc.php">ODBC</a> extension. Other databases may utilize <a href="https://www.php.net/manual/en/book.curl.php">cURL</a> or <a href="https://www.php.net/manual/en/book.sockets.php">sockets</a>, like CouchDB.</p>
+
+			            <p>PHP also has support for talking to other services using protocols such as LDAP, IMAP, SNMP, NNTP, POP3, HTTP, COM (on Windows) and countless others. You can also open raw network sockets and interact using any other protocol. PHP has support for the WDDX complex data exchange between virtually all Web programming languages. Talking about interconnection, PHP has support for instantiation of Java objects and using them transparently as PHP objects.</p>
+
+			            <p>PHP has useful <a href="https://www.php.net/manual/en/refs.basic.text.php">text processing</a> features, which includes the Perl compatible regular expressions (<a href="https://www.php.net/manual/en/book.pcre.php">PCRE</a>), and many extensions and tools to <a href="https://www.php.net/manual/en/refs.xml.php">parse and access XML documents</a>. PHP standardizes all of the XML extensions on the solid base of <a href="https://www.php.net/manual/en/book.libxml.php">libxml2</a>, and extends the feature set adding <a href="https://www.php.net/manual/en/book.simplexml.php">SimpleXML</a>, <a href="https://www.php.net/manual/en/book.xmlreader.php">XMLReader</a> and <a href="https://www.php.net/manual/en/book.xmlwriter.php">XMLWriter</a> support.</p>
+
+			            <p>And many other interesting extensions exist, which are categorized both <a href="https://www.php.net/manual/en/extensions.php">alphabetically</a> and by <a href="https://www.php.net/manual/en/funcref.php">category</a>. And there are additional PECL extensions that may or may not be documented within the PHP manual itself, like <a href="http://xdebug.org/">» XDebug</a>.</p>
+
+			            <p>As you can see this page is not enough to list all the features and benefits PHP can offer. Read on in the sections about <a href="https://www.php.net/manual/en/install.php">installing PHP</a>, and see the <a href="https://www.php.net/manual/en/funcref.php">function reference</a> part for explanation of the extensions mentioned here.</p>
+			        </section>
+			        
+			        <section class="main-section" id="What_you_should_already_know?">
+			            <header>What you should already know?</header>
+			            <p>Before you continue you should have a basic understanding of the following:</p>
+			            <ul>
+			                <li><a href="https://www.w3schools.com/html/default.asp">HTML</a></li>
+			                <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+			                <li><a href="https://www.w3schools.com/js/default.asp">JavaScript</a></li>
+			            </ul>
+
+			            <p>If you want to study these subjects first, find the tutorials on our <a href="https://www.w3schools.com/default.asp">Home page</a>.</p>
+			        </section>
+
+			        <section class="main-section" id="What_do_I_need?">
+			            <header>What do I need?</header>
+			            <p>To start using PHP, you can:</p>
+			            <ul>
+			                <li>Find a web host with PHP and MySQL support</li>
+			                <li>Install a web server on your own PC, and then install PHP and MySQL</li>
+			            </ul>
+			        </section>
+
+			        <section class="main-section" id="Hello_world">
+			            <header>Hello world</header>
+			            <p>"Hello World!" is the first program most beginning programmers will learn to write in any given language. Here is an example of how to print "Hello World!" in PHP.</p>
+			            <code>
+			                <p>&lt;?php</p>
+			                <p>&nbsp;&nbsp;&nbsp;&nbsp;echo "Hello world!"</p>
+			                <p>?&gt;</p>
+			            </code>
+			            <p>This is the output.</p>
+			            <code>
+			                <p>Hello world!</p>
+			            </code>
+			        </section>
+
+			        <section class="main-section" id="Variables">
+			            <header>Variables</header>
+			            <p>Variables are "containers" for storing information.</p>
+			            <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
+			            <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).</p>
+			            <p>Rules for PHP variables:</p>
+			            <ul>
+			                <li>A variable starts with the $ sign, followed by the name of the variable</li>
+			                <li>A variable name must start with a letter or the underscore character</li>
+			                <li>A variable name cannot start with a number</li>
+			                <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+			                <li>Variable names are case-sensitive ($age and $AGE are two different variables)</li>
+			            </ul>
+			        </section>
+
+			        <section class="main-section" id="Declaring_variables">
+			            <header>Declaring variables</header>
+			            <p>In PHP, a variable starts with the $ sign, followed by the name of the variable:</p>
+			            <code>
+			                <p>&lt;?php</p>
+			                <p>$txt = "Hello world!";</p>
+			                <p>$x = 5;</p>
+			                <p>$y = 10.5;</p>
+			                <p>?&gt;</p>
+			            </code>
+			            <p>After the execution of the statements above, the variable $txt will hold the value Hello world!, the variable $x will hold the value 5, and the variable $y will hold the value 10.5.</p>
+			            <p>Note: When you assign a text value to a variable, put quotes around the value.</p>
+			            <p>Note: Unlike other programming languages, PHP has no command for declaring a variable. It is created the moment you first assign a value to it.</p>
+			        </section>
+
+			        <section class="main-section" id="Variable_scope">
+			            <header>Variable scope</header>
+			            <p>In PHP, variables can be declared anywhere in the script.</p>
+			            <p>The scope of a variable is the part of the script where the variable can be referenced/used.</p>
+			            <p>PHP has three different variable scopes:</p>
+			            <ul>
+			                <li>local</li>
+			                <li>global</li>
+			                <li>static</li>
+			            </ul>
+			        </section>
+
+			        <section class="main-section" id="Global_scope">
+			            <header>Global scope</header>
+			            <p>A variable declared outside a function has a GLOBAL SCOPE and can only be accessed outside a function:</p>
+			            <code>
+			                <p>&lt;?php</p>
+			                <p>$x = 5; //global scope</p>
+			                <p>function myTest() {</p>
+			                    <p>&nbsp;&nbsp;&nbsp;&nbsp;// using x inside this function will generate an error</p>
+			                    <p>&nbsp;&nbsp;&nbsp;&nbsp;echo "&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;";</p>
+			                <p>}</p>
+			                <p>myTest ();</p>
+			                <p>echo "&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;";</p>
+			                <p>?&gt;</p>
+			            </code>
+			        </section>
+
+			        <section class="main-section" id="Local_scope">
+			            <header>Local scope</header>
+			            <p>A variable declared within a function has a LOCAL SCOPE and can only be accessed within that function</p>
+			            <code>
+			                <p>&lt;?php</p>
+			                <p>function myTest() {</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;$x = 5; //local scope</p>
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;echo "&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;";</p>
+			                <p>}</p>
+			                <p>myTest ();</p>
+                    <br>
+                    <p>// using x inside this function will generate an error</p>
+			                <p>echo "&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;";</p>
+			                <p>?&gt;</p>
+			            </code>
+			        </section>
+
+			        <section class="main-section" id="Static_scope">
+			            <header>Static scope</header>
+			            <p></p>
+			            <code>
+			                <p>&lt;?php</p>
+			                <p>function myTest() {</p>
+			                    <p>&nbsp;&nbsp;&nbsp;&nbsp;$x = 5; //local scope</p>
+			                    <p>&nbsp;&nbsp;&nbsp;&nbsp;echo "&lt;p&gt;Variable x inside function is: $x&lt;/p&gt;";</p>
+			                    <p>}</p>
+			                <p>myTest ();</p>
+			                    <p>&nbsp;&nbsp;&nbsp;&nbsp;// using x outside this function will generate an error</p>
+			                <p>echo "&lt;p&gt;Variable x outside function is: $x&lt;/p&gt;";</p>
+			                <p>?&gt;</p>
+			            </code>
+			        </section>
+
+			        <section class="main-section" id="Constants">
+			            <header>Constants</header>
+			            <p>Constants are like variables except that once they are defined they cannot be changed or undefined.</p>
+			            <p>A constant is an identifier (name) for a simple value. The value cannot be changed during the script.</p>
+			            <p>A valid constant name starts with a letter or underscore (no $ sign before the constant name).</p>
+			            <p>Unlike variables, constants are automatically global across the entire script.</p>
+			            <p>To create a constant, use the define() function.</p>
+			            <p>Parameters:</p>
+			            <ul>
+			                <li>name: Specifies the name of the constant</li>
+			                <li>value: Specifies the value of the constant</li>
+			                <li>case-insensitive: Specifies whether the constant name should be case-insensitive. Default is false</li>
+			            </ul>
+			            <p>Create a constant with a case-sensitive name:</p>
+			                <code>
+			                    <p>&lt;?php</p>
+			                    <p>define("GREETING", "Welcome to W3Schools.com!");</p>
+			                    <p>echo GREETING;</p>
+			                    <p>?&gt;</p>
+			                </code>
+			            <p>Create a constant with a case-insensitive name:</p>
+			                <code>
+			                    <p>&lt;?php</p>
+			                    <p>define("GREETING", "Welcome to W3Schools.com!", true);</p>
+			                    <p>echo GREETING;</p>
+			                    <p>?&gt;</p>
+			                </code>
+			        </section>
+
+			        <section class="main-section" id="Data_types">
+			            <header>Data types</header>
+			            <p>Variables can store data of different types, and different data types can do different things.</p>
+			            <p>PHP supports the following data types:</p>
+			            <ul>
+			                <li>String</li>
+			                <li>Integer</li>
+			                <li>Float (floating point numbers - also called double)</li>
+			                <li>Boolean</li>
+			                <li>Array</li>
+			                <li>Object</li>
+			                <li>NULL</li>
+			                <li>Resource</li>
+			            </ul>
+			        </section>
+
+			        <section class="main-section" id="If..._else_statement">
+			            <header>If... else statement</header>
+			            <p>Conditional statements are used to perform different actions based on different conditions.</p>
+			            <p>Very often when you write code, you want to perform different actions for different conditions. You can use conditional statements in your code to do this.</p>
+			            <p>In PHP we have the following conditional statements:</p>
+			            <ul>
+			                <li>if statement - executes some code if one condition is true</li>
+			                <li>if...else statement - executes some code if a condition is true and another code if that condition is false</li>
+			                <li>if...elseif...else statement - executes different codes for more than two conditions</li>
+			                <li>switch statement - selects one of many blocks of code to be executed</li>
+			            </ul>
+			        </section>
+
+			        <section class="main-section" id="While_statement">
+			            <header>While statement</header>
+			            <p>The while loop executes a block of code as long as the specified condition is true.</p>
+			        </section>
+
+			        <section class="main-section" id="Reference">
+			            <header>Reference</header>
+			            <p>All the documentation in this page is taken from <a href="https://www.php.net/">PHP.net</a> and <a href="https://www.w3schools.com/php/default.asp">W3 Schools.com</a></p>
+			        </section>
+
+			    </main>
+		</div>
+	</div>
+
+    </body>

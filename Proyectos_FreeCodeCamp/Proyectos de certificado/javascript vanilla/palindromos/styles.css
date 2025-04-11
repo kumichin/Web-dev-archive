@@ -1,0 +1,256 @@
+
+/* reseteo valores default */
+
+:root{
+    --fondo: #043841;
+    --linea-diagonal: rgb(50, 103, 131);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ede7e3;
+}
+
+html, body{
+height: 100%;
+}
+
+
+/* fonts */
+
+/* josefin-sans-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: url('assets/fonts/josefin-sans-v32-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-300italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 300;
+    src: url('assets/fonts/josefin-sans-v32-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/josefin-sans-v32-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: url('assets/fonts/josefin-sans-v32-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/fonts/josefin-sans-v32-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-500italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: url('assets/fonts/josefin-sans-v32-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('assets/fonts/josefin-sans-v32-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-600italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 600;
+    src: url('assets/fonts/josefin-sans-v32-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/josefin-sans-v32-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* josefin-sans-700italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: url('assets/fonts/josefin-sans-v32-latin-700italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* fin de fonts */
+
+/* body */
+
+body{
+
+    background-image: linear-gradient(to left bottom,
+    var(--fondo) 5%,
+    var(--linea-diagonal) 10%,
+    var(--fondo) 15%,
+    /* pink 30%, */
+    var(--fondo) 35%,
+    var(--fondo)80%,
+    /* pink 85%, */
+    var(--fondo) 90%,
+    var(--linea-diagonal) 95%,
+    var(--fondo) 100%
+    );
+
+}
+
+
+/* titulos */
+
+h1, h3, p{
+    margin: 1.3rem;
+    font-family: 'Josefin Sans';
+}
+
+
+h1{
+    font-size: 2.6rem;
+}
+
+h3{
+    font-size: 1.3rem;
+}
+
+p{
+    font-size: 1.3rem;
+}
+/* parte del input, el boton y el texto de resultado */
+
+.elementosCentrados{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.container-result{
+    display: grid;
+    grid-template: auto auto / auto, auto, auto;
+    gap: 1rem;
+    margin: 4rem 20rem;
+    justify-content: center;
+}
+
+#text-input{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#check-btn{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+.cuadro-resultado{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.explicacion{
+  display: grid;
+  grid-template: auto /auto;
+  margin: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* estilos de elementos conjuntos */
+
+input, button, .explicacion, #result{
+    border-radius: 10rem;
+}
+
+/* estilo input */
+
+input{
+    background-color: #043841;
+    border: .5rem double paleturquoise;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+input:focus{
+    border: .5rem double rgb(233, 191, 222);
+}
+
+
+/* estilos button */
+
+button{
+    width: 6rem;
+    height: 3rem;
+    color: #043841;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+button:hover{
+    background-color: rgb(233, 191, 222);
+    scale: 1.1;
+    transition: .5s;
+
+}
+
+/* estilos resultado */
+
+#result{
+    text-align: center;
+    /* margin: 1rem; */
+}
+
+
+details{
+    font-family: 'Josefin Sans';
+    font-size: 1.5rem;
+    width: 80rem;
+    margin: auto;
+}
+
+details[open] {
+    border: .5rem double rgb(233, 191, 222);
+    padding: 1rem;
+}
+
+
+@media (max-width: 450px) {
+    details{
+       width: 2rem;
+    }
+
+}

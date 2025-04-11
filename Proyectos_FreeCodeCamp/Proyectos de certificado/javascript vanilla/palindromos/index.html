@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/iconos/scorpion.svg"
+      type="image/x-icon" />
+    <title>Proyecto palindromo freeCodeCamp by Kumi</title>
+  </head>
+  <body>
+    <div class="container-app">
+    <div class="elementosCentrados">
+      <h1>Texteador de palindromos by Kumi</h1>
+
+      <h3>Introduce tu texto para saber si es un palindromo</h3>
+      <p>
+        La App acepta palabras y frases, Además ignora cualquier caracter
+        especial como son corchetes, ".", "," parentesis...
+      </p>
+    </div>
+    <div class="container-result">
+      <input type="text" id="text-input" required/>
+      <button type="button" id="check-btn">Textea</button>
+      <div class="cuadro-resultado">
+        <p id="result" hidden> </p>
+      </div>
+    </div>
+
+    <details class="explicacion">
+      <summary>¿Que es un palindromo?</summary>
+      <p>
+        Un palindromo se cualquier palabra o frase que sea exactamente igual
+        leida del derecho que del revés
+      </p>
+      <p>
+        Por ejemplo: eye es un palindromo porque si la leemos derecho y del
+        revés su escritura no cambia y sigue siendo la misma palabra
+      </p>
+    </details>
+  </div>
+
+    <script src="palindromos.js"></script>
+  </body>
+</html>

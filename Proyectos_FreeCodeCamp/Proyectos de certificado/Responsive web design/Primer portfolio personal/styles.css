@@ -1,0 +1,171 @@
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	width: 70%;
+  margin-top: 40px;
+	
+  
+}
+
+.projects-title{
+  background-color: #041046;
+  padding: 10px;
+  margin: 0px 90px;
+}
+
+#navbar {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	width: 100%;
+	height: 40px;
+	position: fixed;
+	background-color: #030442;
+	z-index: 1
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	display: inline;
+	padding-right: 40px;
+  
+}
+
+a{
+    text-decoration: none;
+  color: #D3D3F0;
+
+}
+
+.nav-list {
+display: flex;
+  font-size: 1.3rem;
+  padding: 2rem;
+  margin-right: 2rem;
+}
+
+.nav-list a:hover{
+  color: #BADF6A;
+}
+#welcome-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url(https://www.adslzone.net/app/uploads-adslzone.net/2021/10/lenguaje-de-programacion.jpg);
+  background-size: cover;
+  opacity: 0.8;
+	height: 100vh;
+	width: 100%;
+}
+
+#welcome-section p{
+  padding-top: 10px;
+  
+  
+}
+
+h1, h2, p {
+	color: white;
+  background: #04303E;
+  border-radius: 50px 20px;
+  padding: 10px;
+}
+
+#projects {
+	background-color: #0282AD;
+	text-align: center;
+}
+
+.section-header {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 60px 20px;
+	grid-template-areas:
+	"project-1 project-2"
+    "project-3 project-4";
+    padding-bottom: 80px;
+}
+
+.project-1 {
+	grid-area: project-1;
+}
+
+.project-2 {
+	grid-area: project-2;
+}
+
+.project-3 {
+	grid-area: project-3;
+}
+
+.project-4 {
+	grid-area: project-4;
+}
+
+
+#contact {
+	background-color: #00153C;
+	padding-bottom: 100px;
+  
+}
+
+.contact-links {
+	text-align: center;
+  
+}
+
+.contact-details {
+	border: 8px solid #32449A;
+	background-color: transparent;
+	border-radius: 8px;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 100%;
+  
+  
+}
+.aclaraciones{
+	background-color: #00153C;
+	color: white;
+	padding: 2vw;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1vw;
+}
+
+@media only screen and (max-width: 840px) {
+	.contact-details {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 120px;
+	}
+
+	.contact-links {
+    display: flex;
+    flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.projects-grid {
+	display: flex;
+  flex-direction: column;
+  align-items: center;
+	}
+}

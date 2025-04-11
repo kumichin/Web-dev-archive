@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario sobre kpop</title>
+<LINK REL=StyleSheet HREF="styles.css" TYPE="text/css" MEDIA=screen>
+</head>
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">¿Que tan kpoper eres?</h1>
+    <p id="description" class="description text-center">
+      Rellena el formulario y entra en el sorteo de una caja sorpresa de tu grupo de Kpop favorito
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Nombre</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Introduce nombre"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Introduzca email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Edad<span class="clue"></span></label
+      >
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="12"
+        max="99"
+        class="form-control"
+        placeholder="Edad" required
+      />
+    </div>
+    <div class="form-group">
+      <p>Desde cuanto hace que eres kpoper?</p>
+      <select id="dropdown" name="role" class="form-control" required>
+        <option disabled selected value>Selecciona una opción</option>
+        <option value="principiante">menos de 1 año</option>
+        <option value="intermedio">1-2 años</option>
+        <option value="avanzado">3-5 años</option>
+        <option value="master">más de 5 años</option>
+        <option value="curioso">no soy kpoper</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>¿Que grupo te gusta más?</p>
+      <label>
+        <input
+          name="opinion"
+          value="mamamoo"
+          type="radio"
+          class="input-radio"
+          checked
+        />Mamamoo</label
+      >
+      <label>
+        <input
+          name="opinion"
+          value="nuest"
+          type="radio"
+          class="input-radio"
+        />Nu´est</label
+      >
+
+      <label
+        ><input
+          name="opinion"
+          value="blackpink"
+          type="radio"
+          class="input-radio"
+        />Blackpink</label
+      >
+      <label>
+        <input
+          name="opinion"
+          value="twice"
+          type="radio"
+          class="input-radio"
+        />Twice</label
+      >
+      <label>
+        <input
+          name="opinion"
+          value="exo"
+          type="radio"
+          class="input-radio"
+        />Exo</label
+      >
+      <label>
+        <input
+          name="opinion"
+          value="itzy"
+          type="radio"
+          class="input-radio"
+        />Itzy</label
+      >
+      <label>
+        <input
+          name="opinion"
+          value="stray-kids"
+          type="radio"
+          class="input-radio"
+        />Stray kids</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>
+        ¿Cuando comenzó el kpop oficialmente?
+      </p>
+      <select id="fundacion" name="fundacion" class="form-control" required>
+        <option disabled selected value>Selecciona una opción</option>
+        <option value="1980">1980</option>
+        <option value="1990">1990</option>
+        <option value="1992">1992</option>
+        <option value="1995">1995</option>
+        <option value="2000">2000</option>
+        <option value="2020">2020</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+      ¿Que te gusta de los grupos de kpop?
+        <span class="clue">(selecciona todas las que proceda)</span>
+      </p>
+
+      <label
+        ><input
+          name="prefer"
+          value="dance"
+          type="checkbox"
+          class="input-checkbox"
+        />dance</label
+      >
+      <label>
+        <input
+          name="prefer"
+          value="canciones"
+          type="checkbox"
+          class="input-checkbox"
+        />canciones</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="letra-musica"
+          type="checkbox"
+          class="input-checkbox"
+        />letra/musica</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="estetica"
+          type="checkbox"
+          class="input-checkbox"
+        />estetica</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="carisma"
+          type="checkbox"
+          class="input-checkbox"
+        />carisma</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="fandom"
+          type="checkbox"
+          class="input-checkbox"
+        />fandom</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="ambiente"
+          type="checkbox"
+          class="input-checkbox"
+        />ambiente</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="comunidad"
+          type="checkbox"
+          class="input-checkbox"
+        />comunidad</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="mvs"
+          type="checkbox"
+          class="input-checkbox"
+        />MVs</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="challenges"
+          type="checkbox"
+          class="input-checkbox"
+        />challenges</label
+      >
+    </div>
+
+    <div class="form-group">
+      <p>Cuentanos que te ha parecido el Test y de que grupo quieres la caja sorpresa</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Comentanos lo que quieras"
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        enviar
+      </button>
+    </div>
+  </form>
+</div>
+</html>

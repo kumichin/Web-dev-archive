@@ -1,0 +1,119 @@
+code {
+    display: block;
+    background-color: #F2E1EC;
+    width: 500px;
+    line-height: 30px;
+    padding-left: 30px;
+    font-weight: bold;
+  }
+  
+  .container {
+  display: grid;
+  grid-template-columns: 300px 3fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  line-height: 30px;
+    
+  }
+  
+  .grid1 {
+      grid-area: 1 / 1 / 2 / 2;
+      max-width: 400px;
+      background-color: #D3F0D9;
+  }
+  
+  .grid2 {
+      grid-area: 1 / 2 / 2 / 3;
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #F2F2F2;
+  }
+  
+  #navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+  }
+  
+  header {
+    color: black;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+  }
+  
+  #main-doc header {
+    text-align: left;
+    margin: 0px;
+    background-color: #9CEBAD;
+  }
+  
+  #navbar ul {
+    height: 75vh;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-weight: bold;
+  }
+  
+  #navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+  }
+  
+  #navbar a {
+    display: block;
+    padding: 10px 10px;
+    color: #4d4e53;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+  
+    .grid3 {
+      grid-area: 1 / 1 / 2 / 3;
+      padding-right: 50px;
+      padding-left: 50px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background-color: #9CEBAD;
+  }
+  
+    #navbar ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  
+    #navbar {
+      background-color: white;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      max-height: 275px;
+      border: none;
+      z-index: 1;
+      border-bottom: 2px solid;
+    }
+  
+    #main-doc {
+      position: relative;
+      margin-left: 0px;
+      margin-top: 270px;
+    }
+  }
+  
