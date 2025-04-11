@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego de piedra, papel, tijera con interfaz</title>
+</head>
+<body>
+    <h1>✦ Juguemos a Piedra, Papel, Tijeras, Lagarto, Spock ✦</h1>
+    <div class="reglas">
+    <details >
+    <summary>Repasa las reglas del juego</summary>
+    <div>
+    <p>Vas a jugar a piedra, papel, tijeras contra el ordenador</p>
+    <p>Quien llegue a los 5 puntos gana</p>
+    <p>Los simbolos son los siguientes:
+        <ul>
+            <li> 🗿 : Piedra</li>
+            <li> ✂️ : Tijeras</li>
+            <li> 📄 : Papel</li>
+            <li> 🦎 : Lagarto</li>
+            <li> 🖖 : Spock</li>
+        </ul>
+    </p>
+    <p>Las reglas para conseguir puntos son las siguientes:</p>
+    <ul>
+        <li class="iconito"> 🗿 gana a ✂️ porque las destroza a puro golpetazo</li>
+        <li class="iconito"> ✂️ gana a 📄 porque lo corta</li>
+        <li class="iconito"> 📄 gana a 🗿  porque la envuelve</li>
+        <li class="iconito"> 🗿 gana a 🦎 porque lo aplasta</li>
+        <li class="iconito"> 🦎 gana a 🖖 porque lo envenena</li>
+        <li class="iconito"> 🖖 gana a ✂️ porque las destruye</li>
+        <li class="iconito"> ✂️ gana a 🦎 porque lo decapita</li>
+        <li class="iconito"> 🦎 gana a 📄 porque se lo come</li>
+        <li class="iconito"> 📄 gana a 🖖 porque lo desautoriza</li>
+        <li class="iconito"> 🖖 gana a 🗿  porque la vaporiza</li>
+    </ul>
+    
+    <p>Si tú y la máquina sacais la misma elección por ejemplo si los ambos sacais piedra, ninguno obtendrá puntos</p>
+    <p>Elige una opción para comenzar a jugar. ¡Buena suerte!</p>
+
+    </div>
+</details>
+</div>
+
+<div class="puntosContainer" >
+    <p class="puntuaje">Tus puntos: <span id="puntos-jugador">0</span> </p>
+    <p class="puntuaje">Puntos máquina: <span id="puntos-maquina">0</span> </p>
+
+</div>
+
+<h2 id="h2">Elige una opción</h2>
+<div class="elecciones">
+    <button class="elige" id="piedra">🗿</button>
+    <button class="elige" id="papel">📄</button>
+    <button class="elige" id="tijeras">✂️</button>
+    <button class="elige" id="lagarto">🦎</button>
+    <button class="elige" id="spock">🖖</button>
+</div>
+
+<div class="container-resultado">
+<p  class="resultado" id="msg-resultado"></p>
+<p  class="resultado" id="msg-ganador"></p>
+<button class="btn" id="reset-game">Juega otra vez</button>
+</div>
+<footer>
+    <div class="footer"></div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
