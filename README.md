@@ -1,6 +1,6 @@
 # 🗂 web-dev-archive
 
-Este repositorio es una recopilación de mis primeros proyectos como desarrolladora web, realizados antes de comenzar mi camino como ingeniera de inteligencia artificial.
+Este repositorio es una recopilación de mis primeros proyectos como desarrolladora web, realizados antes de comenzar mi camino como cientifica de datos/ingeniera de ia.
 
 Aquí encontrarás ejercicios, desafíos y mini proyectos creados con HTML, CSS y JavaScript, desarrollados en plataformas como FreeCodeCamp y The Odin Project.  
 Forman parte de mis comienzos, aunque no descarto añadir algo nuevo de vez en cuando. Aunque actualmente estoy centrada en el mundo de la IA, el desarrollo web sigue siendo una de mis pasiones, así que es posible que algún que otro proyecto caiga por aquí. 😉
